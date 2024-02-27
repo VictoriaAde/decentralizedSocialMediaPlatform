@@ -19,7 +19,6 @@ contract SocialMedia {
         admins.push(msg.sender);
     }
 
-
     struct Post {
         uint256 tokenId;
         string uri;
@@ -100,23 +99,3 @@ contract SocialMedia {
         return moderators;
     }
 }
-
-
-    // function approvePost(uint256 tokenId) external {
-    //     require(userRoles[msg.sender] == UserRole.Moderator || userRoles[msg.sender] == UserRole.Admin, "Caller is not a moderator or an admin");
-    //     require(!isPostApproved[tokenId], "Post has already been approved");
-
-    //     isPostApproved[tokenId] = true;
-
-    //     emit PostApproved(msg.sender, tokenId);
-    // }
-
-
-    // function createPost(string memory _uri) external {
-    //     require(userRoles[msg.sender] == UserRole.Admin || userRoles[msg.sender] == UserRole.Moderator || userRoles[msg.sender] == UserRole.User, "User is not authenticated");
-
-    //     RokiMarsNFT _userNftContract = RokiMarsNFT(userNftContracts[msg.sender]);
-    //     uint256 _tokenId = _userNftContract.safeMint(msg.sender, _uri); // Capture the token ID
-
-    //     emit PostCreated(msg.sender, _tokenId, _uri);
-    // }
