@@ -27,6 +27,8 @@ yarn hardhat node
 yarn hardhat run scripts/deploy.ts
 ```
 
-![Alt text](images/deployandverify.png)
-
 [Link to verified contract on Etherscan](https://sepolia.etherscan.io/address/0x8d8bee988e144a6bf7180eb8a454a51e815c4820)
+
+[Link to Social Media post on Opensea](https://sepolia.etherscan.io/address/0x8d8bee988e144a6bf7180eb8a454a51e815c4820)
+
+![Alt text](images/deployandverify.png)
